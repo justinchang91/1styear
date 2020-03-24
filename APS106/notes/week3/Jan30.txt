@@ -1,0 +1,14 @@
+Linear program
+
+Branching program
+
+TAs will be looking for flow charts 
+
+Boolean assignments : True or False 
+
+two statements, put and in between if the first is false, the comuter wont evalauate the second one
+
+if statements used to control which instructions are executed by creating a branch in the code
+if what is under the if statement is true, that is evaluated
+
+use elif so the program doesn't have to go through all the ifs

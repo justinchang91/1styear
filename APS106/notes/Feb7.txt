@@ -1,0 +1,6 @@
+Loops!
+
+for loops:
+
+for item in iterable:
+	body

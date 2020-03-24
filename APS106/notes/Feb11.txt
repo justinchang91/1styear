@@ -1,0 +1,7 @@
+LOOOOOPS (for and while)
+
+range(start, stop, step)
+
+used to generate a sequence of numbers.
+stop value not included
+

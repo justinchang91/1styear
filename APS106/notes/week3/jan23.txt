@@ -1,0 +1,30 @@
+Strings and String Methods 
+
+
+String indexing
+-an index is a position within the string 
+-first character begins at 0
+-negative indices count from the right hand side with the last character at index -1
+-ex. string = "derp" string[0] = "d"
+
+if you want to change a character or word or capitalize everything
+
+
+Slicing Strings 
+
+string[start:end:step]
+s = Learn to program
+s[9:] ---> "program"
+s[:] ---> "Learn to program"
+s[:8] ---> "Learn to"
+
+Length
+len(string)
+
+strings are IMMUTABLE. you can't change them but you can just make a new string 
+
+
+
+
+
+

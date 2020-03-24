@@ -1,0 +1,2 @@
+''' ''' - triple quotes basically do a \n for you built in
+find() returns -1 if it CAN'T find the term you're searching for

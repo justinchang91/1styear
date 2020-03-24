@@ -1,0 +1,43 @@
+Notes:
+
+Jan 14, 2019
+
+Types of errors:
+
+Logical errors (poor understanding of problem): 
+-unintended result due to miscalculation/miunderstanding of specifications
+-code will not crash
+
+Syntax errors (spelling and grammar):
+-programming language cannot understand your code
+ex. missing parenthesis or backet, missing an operator, illegal variable name
+
+Runtime errors
+-occurs during the execution (runtime) of a program
+ex. infinte loops, trying to access index out of bounds
+
+Semantic errors 
+-improper use of statements or variables
+ex. using an operator not intended for the variable type, calling function 
+with wrong argument type / wrong number of arguments
+
+
+Functions:
+
+What is a function?
+-block of organized (reusable) code used to perform an activity
+-python has built in functions but you can also make your own "user-defined"
+functions
+
+Why functions?
+-reusability of code
+-technique for managing code
+-good for group work
+
+Calling functions: function_name(argument)
+-evaluate the arguments (values passed to the function)
+-call the function passing in the arguments (you put the arguments in)
+
+Triple quoted string can span multiple lines
+
+

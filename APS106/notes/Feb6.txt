@@ -1,0 +1,50 @@
+General form of list:
+
+[expr1, expr2, ... , exprN]
+
+enclosed in [] and separated by (,)
+
+list can be assigned to a variable
+
+variable = [expr1, expr2, ... , exprN]
+
+
+-list elements may be of any type
+-list can also contain elements of more than one type
+
+street_address = [10, 'Main street']
+
+lists can be indexed like strings
+
+grades = [80, 60, 50]
+grades[1] -> 60
+
+grades can also be sliced grades[0:2], grades[::-2]
+
+LISTS ARE MUTABLE
+-the contents can be mutated (modified)
+
+Aliasing 
+-Aliases: when two variables refer to the same objects
+-When we modify one variable, we are modifying the object it refers to hence 
+ we are also modifying the second variable
+-if you have two names for an object, if you change the aspect of of one of the names, you also change it 
+ for the other.
+
+.append() to add an object to end of list
+.extend() to add list to the end of list 
+.remove() to remove items
+.reverse() reverses the list
+.sort() sorts from smallest to largest
+.insert(int, object) inserts object at the given index, moving items to make roo 
+
+
+nested lists - lists can contain lists!
+[list1, list2, list3]
+
+grades = [['Assignment 1', 80], ['Assignment 2', 90], ['Assignment 3], 70]]
+grades[0] -> ['Assignment 1, 80']
+grades[0][1] -> 80
+
+
+

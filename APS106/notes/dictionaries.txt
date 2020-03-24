@@ -1,0 +1,110 @@
+Dictionaries 
+-used to group a number of items into a single compound value
+-is a type of CONTAINER OBJECT (like lists, sets, tuples etc.)
+
+UNORDERED SEQUENCE of key-value pairs
+Keys in a dictionary are unique!
+Two components: key, value
+uses {}
+
+student_grades = {"john": "A+", "Brad": "C-"} Keys are john and brad values are A+ and C-
+bird_observations = {"Canada goose":3, "northern fulmar":1} key is canada goose and northern fulmar, values are 3 and 1
+
+Assigning values to keys
+eng2sp = {}
+eng2sp["one"] = "uno"
+eng2sp["two"] = "dos"
+
+output: {"two": "dos", "one": "uno"}
+
+Using the dictionary class constructor
+characters = dict(hero = "romeo", villain = "tybalt", friend = "Mercutio")
+characters -> {"villain": "tybalt", "hero": "Romero", "friend": "mercutio"}
+
+
+PROPERTIES 1:
+
+Dictionaries are MUTABLE: Entries can be added, modified or removed.
+The keys must be values of an IMMUTABLE datatype
+
+Dictionaries are UNORDERED. Elements don't have a specific ordering 
+
+
+PROPERTIES 2:
+
+Dictionaries are HETEROGENEOUS. Can contain objects of arbitrary type, e.g lists, dictionaries
+students = {}
+students["John"] = {'Grade': 'A+', 'StudentID': 22321}
+
+students['John']
+-> {'StudentID': 22321, 'Grade': 'A+'}
+
+students['John']['Grade']
+-> 'A+'
+
+
+METHODS:
+
+-clear() - removes all items from the dictionary
+my_dict.clear()
+my_dict
+-> {}
+
+-get() - reads the value of the key entry form the dictionary
+my_dict = {'Bob: 1, 'Jane': 42}
+my_dict.get('Jane', 'N/A')
+42
+-The second parameter is the DEFAULT VALUE 
+-it protects against error because if you call something that does not exist, it will return the default error 
+instead of an error.
+-This is essentially the same as indexing but indexing will give you error if something doesn't exist.
+-Useful for if the USER is searching for something and doesn't know what's in the dictionary
+
+-update() - merges the dictionary that calls update() with another dictionary, supplied as an arguement.
+-Existing entries in the first dictionary are OVERWRITTEN if the same keys exist in the SECOND dictionary!
+my_dict = {'Bob': 1, 'Jane': 42}
+my_dict.update({'John':50, 'Bob': 7})
+my_dict
+-> {'Bob':7, 'Jane':42, 'John':50}
+As you can see, since bob was already a key in the first dictionary, AND it was also in the second dictionary,
+the value of bob gets OVERWRITTEN and becomes the second value
+
+-pop() - removes and returns the value coressponding to the key supplied as argument 
+val = my_dict.pop('Bob')
+val
+-> 1
+
+my_dict
+-> {'Jane', 42}
+
+So it returns the value of Bob, but then it removes it from the dictionary too. 
+
+-my_dict[key] - retrieves value at that specific key
+-my_dict[key] = value - adds an entry or modifies existing entry
+-del my_dict[key] - deletes the key from a dict AND it's value e.g del my_dict['John']
+-key in my_dict tests for existence of key in my_dict
+
+
+The IN operator searches across KEYS and NOT VALUES!!
+if you want to search for values, must do "yellow" in dictionary_name.values()
+
+
+Iterating over dictionary
+
+scientist_birthdate = {'newton' : 1642, 'Darwin' : 1809, 'turing' : 1912}
+
+for scientist, birthdate in scientist_birthdate.items(): (.items() account for both the keys and the values)
+	print(scientist, "was born in", birthdate) -> scientist and birthdate are assigned by which comes first
+
+newton was born in 1642
+darwin was born in 1809
+turing was born in 1912
+
+
+Inverting a dictionary: Values become keys and keys become values
+
+color_to_fruit = {}
+
+for fruit in fruit_to_colour
+	colour = fruit_to_colour[fruit]
+	colour_to_fruit[colour] = fruit

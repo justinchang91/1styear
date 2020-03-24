@@ -1,0 +1,14 @@
+replace(old,new) returns a copy of a string in which old is replaced by new
+
+str.replace("steel", "wood")
+
+Methods can be chained together
+
+str1.lower().replace("forward", "backward")
+
+str.capitalize()
+str.count(sub,[,start [,end]])
+str.ljust(width)
+str.find
+str.rfind
+

@@ -1,0 +1,21 @@
+Defining functions:
+
+def function_name(parameters) : 
+	docstring
+	body (indented)
+	return something (could be none! ex. printThis(), just prints stuff, doesn't return stuff to main)
+
+parameter = variable whose value will be supplied when function is called
+
+Argument: a value given to a function
+Pass: to provide to a function
+Call: ask python to execute a function
+Return: pass back a value 
+
+Six main steps for designing a function:
+1. examples (what does function do?)
+2. type contract (input/output parameter types. Function expects string but you give it an int)
+3. header (choose good name)
+4. description (write a DOCSTRING to describe the function. docstring written in """ or ''')
+5. body (write the code)
+6. test (verify the function on examples)

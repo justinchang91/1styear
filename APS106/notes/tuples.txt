@@ -1,0 +1,65 @@
+TUPLES
+
+-used to group a number of items into a single compound value
+-tuple is an ordered, comma-separated sequence of values
+
+-written using parentheses (): (2,3), ('a', 'bc')
+
+Creating tuples:
+
+julia = ('Julia Roberts', 1967, 'Actress', 'Atlanta')
+car_info = (45, 'Toyota', 'Prius')
+
+b = tuple([2,3])
+b 
+-> (2,3)
+type(b) = tuple
+
+a = tuple("cd")
+a
+-> ('c','d')
+
+A tuple with a single element is (x,) NOT (x)
+
+(x, y) = (4.2, 0.1)
+x
+-> 4.2
+y
+-> 0.1
+
+NOTE: number of variables on left MUST = number of variables on right
+
+Packing tuples
+bob = tuple(["Bob", 19, "MIE"])
+bob
+-> ('Bob', 19, 'MIE')
+
+Unpacking tuples
+bob = tuple(["Bob", 19, "MIE"])
+(name, age, department) = bob
+name -> 'bob'
+age -> 19
+department -> 'MIE'
+
+PROPERTIES:
+
+-Tuples can be subscripted, sliced and looped over
+car_info[1] -> 'Toyota'
+
+-They are IMMUTABLE. Can not be changed once created.
+life[0] = life[1] -> ERROR
+
+HOWEVER. The objects INSIDE can be mutated.
+life[0][1] = 80
+
+Advantages:
+-makes code safer by "write-protecting" data
+-makes functions more flexible so you can return multiple values at once. (Have to return it into a tuple of 
+the same size as the return values though)
+
+
+
+
+
+
+

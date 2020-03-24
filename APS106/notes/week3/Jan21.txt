@@ -1,0 +1,59 @@
+object oriented programming: 
+-an approach for modeling things and their relationships to other things
+-objects: desk, person, bug etc.
+-can assign different attributes to objects: walk, sit, roll etc.
+
+Classes (general things): 
+-general attributes that can describe an object
+-examples are Music(), Sport() they have many data-structures
+
+Objects (instances) 
+-a particular instance
+-ex. songs have specific lyrics, beats per minute
+-ex. specific game of a particular sport
+
+Methods: a function available for a specific object, because of it's type 
+ex. append, add/remove
+
+Dissecting a song
+
+Passionate from miles away
+Passive with the things you say
+Passin' up on my old ways
+I can't blame you, no, no
+
+In python, EVERYTHING is an object. Values, variables, functions... are all objects 
+
+each object has a memory adddress
+ex. id(int) ---> 1664773712
+
+OBJECTS HAVE METHODS
+each python object has certain functions that can ONLY be applied to that object. These functions are METHODS
+ex. object_name.method_name(arguments)
+    t.forward(200)
+
+advantages of methods
+-another way to structure/organize code
+-when you call a method, the object data is passed implicitly (skips parameters)
+-easy to understand
+
+example 
+
+import turtle ----> turtle is the CLASS
+
+tina = turtle.Turtle() ----> tina is the OBJECT
+
+tina.forward(50)
+tina.backward(50)
+tina.left()
+tina.right()
+
+forward, backward, left, right are all METHODS
+
+\n = newline "How\nare\nyou?"
+
+
+String Operators
+
+str1 + str2  ex. print("ab" + "c") ----> abc
+str1 * int1  ex. print("a" * 5) ----> aaaaa
