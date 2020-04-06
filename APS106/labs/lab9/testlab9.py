@@ -107,7 +107,7 @@ class Stack:
 
         # TODO: YOUR CODE HERE
         current_node = self.top  # start at the top
-        while current_node is not None:
+        while current_node.next is not None:
             if current_node.cargo[0] == coordinate:  # if the coordinate is found in the linked list, return True
                 # use node.cargo to access the cargo, then index the cargo
                 return True
