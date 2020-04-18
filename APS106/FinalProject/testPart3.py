@@ -1,7 +1,21 @@
-# PART 1 CRAP
 import csv
 
-filename = open("part2data", "r")
+
+class Covid_Country:
+
+    def __init__(self, country, data):
+        self.country_name = country
+        self.daily_count = data[country]
+
+    def day_count(self, date):
+        for dates in self.daily_count:
+            if dates[0] == date:
+                return dates[1]
+
+        return None
+
+
+filename = open("a bit of covid data.txt", "r")
 
 data_reader = list(csv.reader(filename))
 
@@ -33,15 +47,7 @@ for i in range(1, len(data_reader), 1):
 
     else:
         dict1[country] = [(date, int(confirmed))]
-# END OF PART 1 CRAP
 
-# Part 2
-dict2 = {}
-country_names = ["Bulgaria", "Serbia", "Croatia", "Canada"]
+afghanistan = Covid_Country("Afghanistan", filename)
 
-for i in country_names:
-    for j in dict1:
-        if i == j:
-            dict2[i] = dict1[j]
-
-print(dict2)
+print(afghanistan.country_name)
