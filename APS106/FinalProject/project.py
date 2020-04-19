@@ -332,16 +332,17 @@ def run_my_tests():
 
     # The code for part 4
     if test_what == "all" or test_what == "Part 4":
+        print("Part 4: ")
         # For test 1:
         spliteth_nodeth = Split_Node()
-        print("For test 1: ")
+        print("\nFor test 1 of Part 4: ")
         print(spliteth_nodeth.split_number)
         print(spliteth_nodeth.countries)
         print(spliteth_nodeth.left)
         print(spliteth_nodeth.right)
 
         # For test 2
-        print("\nFor test 2: ")
+        print("\nFor test 2 of Part 4: ")
         date = '2020-03-21'
         dict_thing = parse_covid19("a bit of covid data.txt")
         countries = []
