@@ -1,5 +1,5 @@
 Province_State,Country_Region,Last_Update,Confirmed,Deaths
-,Afghanistan,2020-01-22,0,0
-,Afghanistan,2020-01-22,12,0
-,Afghanistan,2020-01-23,34,0
-Ontario,Canada,2020-01-23,19,0
+,Afghanistan,2020-03-21,2,0
+Ontario,Canada,2020-03-21,19,0
+Quebec,Canada,2020-03-21,30,0
+New York,US,2020-03-21,50,0

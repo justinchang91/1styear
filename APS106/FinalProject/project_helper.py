@@ -57,7 +57,7 @@ def buildbtree_node(node):
         
     return root
 
-print_details = False
+print_details = True
 
 #Use this method to visualize the binary tree and information
 def display_tree(tree_root, date):
