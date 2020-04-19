@@ -4,8 +4,6 @@
 
 #Enter code for Part1 below:
 
-
-
 def parse_covid19(filename):
     import csv
     csvfile = open(filename, "r")
@@ -45,6 +43,7 @@ def parse_covid19(filename):
 
 
 #Enter code for Part2 below:
+
 def select_countries(country_names, covid19_data):
     dict2 = {}
     # Find the countries in country_names that are also in covid19_data
@@ -55,7 +54,8 @@ def select_countries(country_names, covid19_data):
 
     return dict2
 
-#Enter code for Part3 below:    
+#Enter code for Part3 below:
+
 class Covid_Country:
 
     def __init__(self, country_name, covid19_data):
@@ -70,6 +70,7 @@ class Covid_Country:
         return None  # if there's no date for that country, return None
 
 #Enter code for Part4 below:
+
 class Split_Node:
 
     def __init__(self):  # Assign default values
